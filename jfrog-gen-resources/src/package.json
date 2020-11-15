@@ -1,0 +1,13 @@
+{
+  "name": "jfrog-gen-resources",
+  "version": "1.0.0",
+  "description": "JFrog resources generator",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kaholo team",
+  "license": "ISC",
+  "dependencies": {
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "name": "JFrog-Resources",
+  "description": "JFrog resources generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "gitRepoResource",
+      "viewName": "Add GitRepo Resource",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Resource name",
+          "type": "string"
+        },
+        {
+          "name": "gitProvider",
+          "viewName": "git integration name",
+          "type": "string"
+        },
+        {
+          "name": "path",
+          "viewName": "Path",
+          "type": "string"
+        },
+        {
+          "name": "branchesInclude",
+          "viewName": "Branches Include",
+          "type": "string"
+        },
+        {
+          "name": "branchesExclude",
+          "viewName": "Branches Exclude",
+          "type": "string"
+        },
+        {
+          "name": "tagsInclude",
+          "viewName": "Tags Include",
+          "type": "string"
+        },
+        {
+          "name": "tagsExclude",
+          "viewName": "Tags Exclude",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "buildInfoResource",
+      "viewName": "Add BuildInfo Resource",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Resource name",
+          "type": "string"
+        },
+        {
+          "name": "sourceArtifactory",
+          "viewName": "Source Artifactory",
+          "type": "string"
+        },
+        {
+          "name": "buildName",
+          "viewName": "Build Name",
+          "type": "string"
+        },
+        {
+          "name": "buildNumber",
+          "viewName": "Build Number",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "name": "imageResource",
+      "viewName": "Add Image Resource",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Resource name",
+          "type": "string"
+        },
+        {
+          "name": "registry",
+          "viewName": "Registry",
+          "type": "string"
+        },
+        {
+          "name": "sourceRepository",
+          "viewName": "Source Repository",
+          "type": "string"
+        },
+        {
+          "name": "region",
+          "viewName": "Region",
+          "type": "string"
+        },
+        {
+          "name": "imageName",
+          "viewName": "Image Name",
+          "type": "string"
+        },
+        {
+          "name": "imageTag",
+          "viewName": "Tage Tag",
+          "type": "string"
+        },
+        {
+          "name": "autoPull",
+          "viewName": "Auto Pull",
+          "type": "boolean"
+        }
+      ]
+    }
+  ]
+}

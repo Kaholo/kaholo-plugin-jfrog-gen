@@ -1,0 +1,45 @@
+{
+  "name": "JFrog-Pipeline",
+  "description": "JFrog pipelines and yml generator",
+  "type": "executer",
+  "main": "app.js",
+  "execProgram": "node",
+  "exposeRoute": false,
+  "imgUrl": "logo.png",
+  "version": "1.0.0",
+  "settings" : [],
+  "methods": [
+    {
+      "name": "createPipeline",
+      "viewName": "Create Pipeline",
+      "params": [
+        {
+          "name": "name",
+          "viewName": "Pipeline name",
+          "type": "string"
+        },
+        {
+          "name": "environmentVariables",
+          "viewName": "Environment Variables",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "createYml",
+      "viewName": "Create Yml",
+      "params": [
+        {
+          "name": "results",
+          "viewName": "Results (array)",
+          "type": "string"
+        },
+        {
+          "name": "outputPath",
+          "viewName": "Output Path",
+          "type": "string"
+        }
+      ]
+    }
+  ]
+}
